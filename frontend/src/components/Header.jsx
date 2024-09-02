@@ -1,13 +1,21 @@
 import React from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
+import Logo from "../assets/logo.png";
 import { FaShoppingCart, FaUser } from "react-icons/fa";
 
 const Header = () => {
   return (
     <header>
-      <Navbar bg="dark" varient="dark" expand="md" collapseOnSelect>
+      <Navbar bg="dark" variant="dark" expand="md" collapseOnSelect>
         <Container>
-          <Navbar.Brand href="/">Zoc Buys</Navbar.Brand>
+          <Navbar.Brand href="/">
+            <img
+              style={{ width: "150px" }}
+              className="img-fluid rounded mx-auto d-block"
+              src={Logo}
+              alt="Logo"
+            />
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse>
             <Nav className="ms-auto">
